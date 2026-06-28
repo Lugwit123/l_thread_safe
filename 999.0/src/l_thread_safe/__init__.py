@@ -71,7 +71,7 @@ else:
     _DISPATCHER_AVAILABLE = True
 
     # 线程安全UI Helper
-    from .helper import ThreadSafeUIHelper
+    from .helper import ThreadSafeUIHelper, thread_safe
     _HELPER_AVAILABLE = True
 
     # 数据同步工具
@@ -293,6 +293,7 @@ __all__ = [
     # 核心类
     'CallbackDispatcher',
     'ThreadSafeUIHelper',
+    'thread_safe',
     'ThreadSafeData',
     'ThreadSafeQueue',
     'ThreadSafeDict',
